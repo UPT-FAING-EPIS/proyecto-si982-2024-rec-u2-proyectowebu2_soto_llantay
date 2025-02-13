@@ -129,7 +129,8 @@ Versión *{1.0}*
 
     3.2. Consideraciones de hardware y software
 
-          ![alt text](image.png)
+          ![image](https://github.com/user-attachments/assets/ea027f9a-b318-4afb-890a-834086d2fbb1)
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -139,8 +140,9 @@ Versión *{1.0}*
     El estudio de Factibilidad busca analizar los beneficios generales obtenidos con la implementación del desarrollo del software a la empresa y sus procesos. 
 
     4.1. <span id="_Toc52661350" class="anchor"></span>Factibilidad Técnica
+   ![image](https://github.com/user-attachments/assets/50902b05-63d8-4ab9-a459-aad095cdf2a7)
 
-       El costo operativo por 3 meses es un total de S/ 330.00
+
 
     4.2. <span id="_Toc52661351" class="anchor"></span>Factibilidad Económica
 
@@ -154,19 +156,24 @@ Versión *{1.0}*
 
         4.2.2. Costos operativos durante el desarrollo 
         
-                ![alt text](image-2.png)
+                ![image](https://github.com/user-attachments/assets/23865433-d339-4b11-b91a-e2dbdeb56a76)
 
+El costo operativo por 2 meses es un total de S/ 330.00
         4.2.3. Costos del ambiente
 
-                ![alt text](image-3.png)
+               ![image](https://github.com/user-attachments/assets/da925874-ce34-41c4-9699-7bf75fb99c16)
 
+El costo total del ambiente por dos meses es de: S/ 660.00
         4.2.4. Costos de personal
 
-                ![alt text](image-4.png)
+                ![image](https://github.com/user-attachments/assets/4fabb6fc-d606-4f79-9595-406316b71140)
 
+Costo total del personal por dos meses es de: S/ 6200
         4.2.5.  Costos totales del desarrollo del sistema
 
-                ![alt text](image-1.png)
+                A continuación, un resumen de todos los costos totales del proyecto final. 
+                ![image](https://github.com/user-attachments/assets/3bf17c66-4319-421d-963a-ca88960d41f4)
+
 
     4.3. <span id="_Toc52661352" class="anchor"></span>Factibilidad Operativa
 
@@ -216,16 +223,19 @@ Versión *{1.0}*
 
             5.1.2.1. Relación Beneficio/Costo (B/C)
 
-                ![alt text](image-5.png)
+               ![image](https://github.com/user-attachments/assets/96fa5176-f5f8-4774-a343-fb7c22c4b732)
+
 
             5.1.2.2. Valor Actual Neto (VAN)
             
-              ![alt text](image-6.png)
+             ![image](https://github.com/user-attachments/assets/28aaa234-35c1-4bd2-8db1-5ff09d0ccd29)
+
 
               El VAN es S/ 4205.86, lo que indica que el proyecto es rentable al generar un valor positivo.
 
             5.1.2.3 Tasa Interna de Retorno (TIR)*
-                ![alt text](image-7.png)
+               ![image](https://github.com/user-attachments/assets/2af7dec8-0e3b-4562-94e0-3f0fa0cf80e0)
+
 
                 La TIR es 33.78% anual.
                     Esto significa que el proyecto generará una tasa de retorno del 33.78%, lo que indica una excelente rentabilidad en comparación con la tasa mínima requerida del 10%.
