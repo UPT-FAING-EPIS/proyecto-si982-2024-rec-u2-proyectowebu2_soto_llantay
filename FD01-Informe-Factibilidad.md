@@ -10,26 +10,27 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *{Nombre de Proyecto}***
+**Proyecto *Sistema Web Bolsa de Trabajo***
 
-Curso: *{Nombre de Asignatura}*
+Curso: *Programacion Web II*
 
-Docente: *{Nombre de Docente}*
+Docente: *Patrick Cuadros Quiroaga*
 
 Integrantes:
 
-***{Apellidos y nombres del estudiante (código universitario)}***
+***Llantay Machaca Marjiory Grace 	(2020068951)***
+***Soto Rodriguez Duanet			 (2015051384)***
 
 **Tacna – Perú**
 
-***{Año}***
+***2025***
 
 **  
 **
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *{Nombre del Sistema}*
+Sistema *Bolsa de Trabajo*
 
 Informe de Factibilidad
 
@@ -77,23 +78,46 @@ Versión *{1.0}*
 
     1.1. Nombre del proyecto
 
+    Sistema Web Bolsa de Trabajo
+
     1.2. Duración del proyecto
+
+    La duración estimada del proyecto es de aproximadamente 2 meses. 
+    -	Inicio de proyecto: Enero 2025 
+    -	Finalización del proyecto: Febrero 2025
+
 
     1.3. Descripción
 
-        En que consiste el proyecto/importancia del mismo, contexto en que se va desenvolver
+        El proyecto consiste en desarrollar una plataforma web que facilite la conexión eficiente entre empresas que ofrecen oportunidades laborales y usuarios que buscan empleo. Este sistema permitirá a los candidatos registrar sus perfiles, buscar y postularse a empleos en diversas áreas de interés, mientras que las empresas podrán publicar ofertas de trabajo, gestionar postulaciones y acceder a perfiles de candidatos calificados.
+
+        La importancia del proyecto radica en simplificar y optimizar el proceso de búsqueda y oferta de empleo, fomentando la empleabilidad y apoyando a las empresas en la identificación de talento adecuado. El sistema operará en un entorno seguro, accesible y fácil de usar.
 
     1.4. Objetivos
 
         1.4.1 Objetivo general
+
+        Diseñar e implementar una plataforma web para conectar eficientemente a empresas y candidatos, optimizando los procesos de reclutamiento y búsqueda de empleo.
+
         1.4.2 Objetivos Específicos
-            Para cada objetivo específico se indicara que se va a lograr
+
+            •	Crear un sistema de registro y gestión de perfiles para candidatos y empresas.
+            •	Implementar filtros de búsqueda avanzados para ofertas de empleo por palabra clave, ubicación y tipo de     puesto.
+            •	Diseñar un panel administrativo para la gestión de usuarios y contenido.
+            •	Garantizar la seguridad de los datos personales cumpliendo con normativas como el GDPR.
+            •	Proveer notificaciones en tiempo real sobre el estado de postulaciones y ofertas laborales.
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 2. <span id="_Toc52661347" class="anchor"></span>**Riesgos**
 
-    Señale los riesgos que pudieran afectar el éxito del proyecto.}*
+    •	Riesgos técnicos relacionados con la integración de funcionalidades avanzadas.
+    •	Problemas de cumplimiento con normativas legales como el GDPR.
+    •	Dificultades en la adopción del sistema por parte de usuarios finales.
+    •	Posibles sobrecostos en infraestructura o desarrollos adicionales no previstos.
+    •	Amenazas relacionadas con la seguridad de los datos.
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
@@ -101,26 +125,22 @@ Versión *{1.0}*
 
     3.1. Planteamiento del problema
 
-            Describa antecedentes y situación actual, explicando la problemática y/o necesidad que será resuelta con el proyecto propuesto.
+            Actualmente, las empresas enfrentan dificultades para encontrar candidatos calificados debido a la falta de una plataforma eficiente y centralizada. Por otro lado, los candidatos experimentan frustración en su búsqueda de empleo debido a la ineficiencia de los sistemas existentes. Esto genera procesos prolongados, altos costos y desconexión entre la oferta y la demanda laboral.
 
     3.2. Consideraciones de hardware y software
 
-            Hardware y software posibles para la implementación, se analizara lo que existe y es alcanzable, se evaluara que tecnología se puede > utilizar en el proyecto.
+          ![alt text](image.png)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 4. <span id="_Toc52661349" class="anchor"></span>**Estudio de
     Factibilidad**
 
-    Describir los resultados que esperan alcanzar del estudio de factibilidad, las actividades que se realizaron para preparar la evaluación de factibilidad y por quien fue aprobado.
+    El estudio de Factibilidad busca analizar los beneficios generales obtenidos con la implementación del desarrollo del software a la empresa y sus procesos. 
 
     4.1. <span id="_Toc52661350" class="anchor"></span>Factibilidad Técnica
 
-        El estudio de viabilidad técnica se enfoca en obtener un entendimiento de los recursos tecnológicos disponibles actualmente y su aplicabilidad a las necesidades que se espera tenga el proyecto. En el caso de tecnología informática esto implica una evaluación del hardware y software y como este puede cubrir las necesidades del sistema propuesto.
-
-        Realizar una evaluación de la tecnología actual existente y la posibilidad de utilizarla en el desarrollo e implantación del sistema.*
-
-        Describir acerca del hardware (equipos, servidor), software (aplicaciones, navegadores, sistemas operativos, dominio, internet, infraestructura de red física, etc.
+       El costo operativo por 3 meses es un total de S/ 330.00
 
     4.2. <span id="_Toc52661351" class="anchor"></span>Factibilidad Económica
 
@@ -131,100 +151,89 @@ Versión *{1.0}*
 
         Definir los siguientes costos:
 
-        4.2.1. Costos Generales
-
-                Los costos generales son todos los gastos realizados en accesorios y material de oficina y de uso diario, necesarios para los procesos, tales como, papeles, plumas, cartuchos de impresora, marcadores, computadora etc. Colocar tabla de costos.
 
         4.2.2. Costos operativos durante el desarrollo 
         
-                Evaluar costos necesarios para la operatividad de las actividades de la empresa durante el periodo en el que se realizara el proyecto. Los costos de operación pueden ser renta de oficina, agua, luz, teléfono, etc.
+                ![alt text](image-2.png)
 
         4.2.3. Costos del ambiente
 
-                Evaluar si se cuenta con los requerimientos técnicos para la implantación del software como el dominio, infraestructura de red, acceso a internet, etc.
+                ![alt text](image-3.png)
 
         4.2.4. Costos de personal
 
-                Aquí se incluyen los gastos generados por el recurso humano que se necesita para el desarrollo del sistema únicamente.
-
-                No se considerará personal para la operación y funcionamiento del sistema.
-
-                Incluir tabla que muestra los gastos correspondientes al personal.
-
-                Indicar organización y roles. Indicar horario de trabajo del personal.
+                ![alt text](image-4.png)
 
         4.2.5.  Costos totales del desarrollo del sistema
 
-                {Totalizar costos y realizar resumen de costo final del proyecto y la forma de pago.
+                ![alt text](image-1.png)
 
     4.3. <span id="_Toc52661352" class="anchor"></span>Factibilidad Operativa
 
-        Describir los beneficios del producto y si se tiene la capacidad por parte del cliente para mantener el sistema funcionando y garantizar el buen funcionamiento y su impacto en los usuarios. Lista de interesados.
+       Los beneficios incluyen eficiencia en la búsqueda de talento, mejora en la experiencia de usuarios y optimización de procesos. Se garantiza soporte técnico durante y después del desarrollo.
 
     4.4. <span id="_Toc52661353" class="anchor"></span>Factibilidad Legal
 
-        Determinar si existe conflicto del proyecto con restricciones legales como leyes y regulaciones del país o locales relacionadas con seguridad, protección de datos, conducta de negocio, empleo y adquisiciones.
+       Se respetará la Ley de DATOS PERSONALES (Ley Nº 29733), su objetivo es garantizar el derecho fundamental a la protección de los datos personales, de acuerdo con lo declarado en la Constitución. manteniendo con la mayor seguridad la integridad de los datos de los usuarios. 
+
+        Tampoco habrá conflictos con licencias, ya que todas han sido mencionadas con su respectivo costo en este presente documento para la compra de estas.
+
 
     4.5. <span id="_Toc52661354" class="anchor"></span>Factibilidad Social 
 
-        Evaluar influencias y asuntos de índole social y cultural como el clima político, códigos de conducta y ética*
+       Impacta positivamente al promover la empleabilidad y facilitar el acceso al mercado laboral.
 
     4.6. <span id="_Toc52661355" class="anchor"></span>Factibilidad Ambiental
 
-        Evaluar influencias y asuntos de índole ambiental como el impacto y repercusión en el medio ambiente.
+        Uso eficiente de recursos digitales y servidores con bajo impacto ambiental.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 5. <span id="_Toc52661356" class="anchor"></span>**Análisis Financiero**
 
-    El plan financiero se ocupa del análisis de ingresos y gastos asociados a cada proyecto, desde el punto de vista del instante temporal en que se producen. Su misión fundamental es detectar situaciones financieramente inadecuadas.
-    Se tiene que estimar financieramente el resultado del proyecto.
+    El plan financiero se ocupa del análisis de ingresos y gastos asociados a cada proyecto, desde el punto de vista del instante temporal en que se producen. Su misión fundamental es detectar situaciones financieramente inadecuadas. 
+
+    Para demostrar que este proyecto es rentable, utilizamos una TEA (Tasa de interés) = 10% y el VAN, B/C y TIR.
+
 
     5.1. Justificación de la Inversión
 
         5.1.1. Beneficios del Proyecto
 
-            El beneficio se calcula como el margen económico menos los costes de oportunidad, que son los márgenes que hubieran podido obtenerse de haber dedicado el capital y el esfuerzo a otras actividades.
-            El beneficio, obtenido lícitamente, no es sólo una recompensa a la inversión, al esfuerzo y al riesgo asumidos por el empresario, sino que también es un factor esencial para que las empresas sigan en el  mercado e incorporen nuevas inversiones al tejido industrial y social de las naciones.
-            Describir beneficios tangibles e intangibles*
-            Beneficios tangibles: son de fácil cuantificación, generalmente están relacionados con la reducción de recursos o talento humano.
-            Beneficios intangibles: no son fácilmente cuantificables y están relacionados con elementos o mejora en otros procesos de la organización.
->
-            Ejemplo de beneficios:
+            ▪	Reducción de errores: El SGCS permite una gestión más precisa de las versiones y configuraciones del software, lo que conduce a una disminución significativa de errores en el desarrollo, lo que ahorra tiempo y recursos.
+            ▪	Ahorro de recursos de desarrollo: Al optimizar la gestión de configuración, se evita el desperdicio de recursos, como hardware, licencias de software y tiempo de desarrollo, lo que se traduce en ahorros financieros directos.
+            ▪	Mayor eficiencia en el desarrollo: Agiliza la colaboración entre equipos de desarrollo, lo que acelera la entrega de software y mejora la eficiencia general del proceso.
+            ▪	Cumplimiento regulatorio: Cumplir con regulaciones y estándares de la industria es fundamental en muchos sectores. Un SGCS bien implementado facilita la documentación y el seguimiento necesarios para cumplir con estos requisitos, lo que puede evitar multas y sanciones.
 
-            - Mejoras en la eficiencia del área bajo estudio.
-            - Reducción de personal.
-            - Reducción de futuras inversiones y costos.
-            - Disponibilidad del recurso humano.
-            - Mejoras en planeación, control y uso de recursos.
-            - Suministro oportuno de insumos para las operaciones.
-            - Cumplimiento de requerimientos gubernamentales.
-            - Toma acertada de decisiones.
-            - Disponibilidad de información apropiada.
-            - Aumento en la confiabilidad de la información.
-            - Mejor servicio al cliente externo e interno
-            - Logro de ventajas competitivas.
-            - Valor agregado a un producto de la compañía.
+            Beneficios Intangibles 
+            ▪	Mejora de la calidad del software: Puede mejorar significativamente la calidad del software, lo que se traduce en una mayor satisfacción del cliente y una mejor reputación de la empresa.
+            ▪	Colaboración y comunicación mejoradas: Puede fomentar una cultura de colaboración y comunicación efectiva entre los equipos, lo que no solo mejora el proceso de desarrollo de software, sino que también puede tener un impacto positivo en la moral y la satisfacción de los empleados.
+            ▪	Mayor agilidad y capacidad de respuesta: Puede mejorar la capacidad de la organización para adaptarse a las necesidades cambiantes del mercado.
+            ▪	Reducción de conflictos internos: Al evitar la confusión y los conflictos sobre las versiones y configuraciones del software, el SGCS puede contribuir a un ambiente de trabajo menos estresante.
+
         
         5.1.2. Criterios de Inversión
 
             5.1.2.1. Relación Beneficio/Costo (B/C)
 
-                En base a los costos y beneficios identificados se evalúa si es factible el desarrollo del proyecto. 
-                Si se presentan varias alternativas de solución se evaluará cada una de ellas para determinar la mejor solución desde el punto de vista del > retorno de la inversión
-                El B/C si es mayor a uno, se acepta el proyecto; si el B/C es igual a uno es indiferente aceptar o rechazar el proyecto y si el B/C es menor a uno se rechaza el proyecto
+                ![alt text](image-5.png)
 
             5.1.2.2. Valor Actual Neto (VAN)
             
-                Valor actual de los beneficios netos que genera el proyecto. Si el VAN es mayor que cero, se acepta el proyecto; si el VAN es igual a cero es indiferente aceptar o rechazar el proyecto y si el VAN es menor que cero se rechaza el proyecto
+              ![alt text](image-6.png)
+
+              El VAN es S/ 4205.86, lo que indica que el proyecto es rentable al generar un valor positivo.
 
             5.1.2.3 Tasa Interna de Retorno (TIR)*
-                Es la tasa porcentual que indica la rentabilidad promedio anual que genera el capital invertido en el proyecto. Si la TIR es mayor que el costo de oportunidad se acepta el proyecto, si la TIR es igual al costo de oportunidad es indiferente aceptar o rechazar el proyecto, si la TIR es menor que el costo de oportunidad se rechaza el proyecto
+                ![alt text](image-7.png)
 
-                Costo de oportunidad de capital (COK) es la tasa de interés que podría haber obtenido con el dinero invertido en el proyecto
+                La TIR es 33.78% anual.
+                    Esto significa que el proyecto generará una tasa de retorno del 33.78%, lo que indica una excelente rentabilidad en comparación con la tasa mínima requerida del 10%.
+
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 6. <span id="_Toc52661357" class="anchor"></span>**Conclusiones**
 
-Explicar los resultados del análisis de factibilidad que nos indican si el proyecto es viable y factible.
+El análisis de factibilidad respalda la implementación del proyecto "Bolsa de Trabajo" como una solución eficiente, segura y rentable para mejorar el mercado laboral. Su diseño fomenta la inclusión social, la optimización de recursos, y la generación de beneficios económicos para las partes involucradas. Por lo tanto, se recomienda proceder con la ejecución del proyecto.
+
