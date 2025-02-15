@@ -44,6 +44,6 @@ resource "azurerm_windows_web_app" "webapp" {
   site_config {
     minimum_tls_version        = "1.2"
     always_on                  = false
-    use_32_bit_worker_process  = true
+    use_32_bit_worker_process  = true  # Colocación corregida
   }
 }
