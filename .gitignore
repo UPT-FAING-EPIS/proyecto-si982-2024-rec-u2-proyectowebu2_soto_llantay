@@ -1,0 +1,16 @@
+# Ignorar la carpeta aspnet_client
+**/aspnet_client/
+
+# Ignorar la carpeta packages
+**/packages/
+
+# Ignorar archivos binarios y de compilación
+bin/
+obj/
+
+# Ignorar archivos de usuario de Visual Studio
+*.user
+*.suo
+
+# Ignorar archivos de configuración local
+*.local
