@@ -45,4 +45,5 @@ resource "azurerm_windows_web_app" "webapp" {
     minimum_tls_version = "1.2"
     always_on           = false
     net_framework_version = "v4.8"
+  }
 }
