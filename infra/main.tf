@@ -43,11 +43,11 @@ resource "azurerm_windows_web_app" "webapp" {
   site_config {
     minimum_tls_version = "1.2"
     always_on           = false
-    use_32_bit_worker   = true  # ✔️ Nombre correcto
+    use_32_bit_worker   = true  # ✔️
 
     application_stack {
-      current_stack        = "dotnet"  # 🔥 Campo REQUERIDO
-      net_framework_version = "v4.8"   # ✔️ Versión de .NET
+      current_stack  = "dotnet"    # Obligatorio: Define el stack como .NET
+      dotnet_version = "v4.8"      # ✔️ Argumento CORRECTO para .NET Framework
     }
   }
 }
