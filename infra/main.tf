@@ -35,7 +35,7 @@ resource "azurerm_service_plan" "appserviceplan" {
 
 # Crear la Aplicación Web en Azure para .NET Framework
 resource "azurerm_windows_web_app" "webapp" {
-  name                = "upt-awa-bolsatrabajo"
+  name                = "upt-awa-animalia"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.appserviceplan.id
@@ -44,9 +44,5 @@ resource "azurerm_windows_web_app" "webapp" {
   site_config {
     minimum_tls_version = "1.2"
     always_on           = false
-    application_stack {
-      current_stack = "dotnet"
-      net_framework_version = "v4.8"  # Especifica la versión de .NET Framework
-    }
-  }
+    net_framework_version = "v4.8"
 }
