@@ -1,6 +1,0 @@
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\bin\Debug\Entidades.dll
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\bin\Debug\Entidades.pdb
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.dll
-C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.pdb
