@@ -2,7 +2,7 @@ name: Construcción y despliegue de Systm_Web en Azure App Service
 
 env:
   AZURE_WEBAPP_NAME: upt-aspnet-app  # Nombre en Azure
-  AZURE_WEBAPP_PACKAGE_PATH: './Systm_Web/bin/Release/net48/'  # Ruta al paquete compilado
+  AZURE_WEBAPP_PACKAGE_PATH: '.'  # Ruta al paquete compilado
   BUILD_CONFIGURATION: 'Release'
 
 on:
