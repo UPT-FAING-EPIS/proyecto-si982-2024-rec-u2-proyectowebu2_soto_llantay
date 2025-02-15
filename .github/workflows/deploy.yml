@@ -17,24 +17,41 @@ jobs:
       # Paso 1: Checkout del repositorio
       - uses: actions/checkout@v4
 
-      # Paso 3: Configurar MSBuild
+      # Paso 2: Configurar MSBuild
       - name: Configurar MSBuild
         uses: microsoft/setup-msbuild@v1
 
-      # Paso 4: Restaurar paquetes NuGet
+      # Paso 3: Restaurar paquetes NuGet
       - name: Restaurar paquetes NuGet
         working-directory: Systm_Web
         run: nuget restore Systm_Web.sln
 
-      # Paso 5: Compilar la aplicación con MSBuild
+      # Paso 4: Compilar la aplicación con MSBuild
       - name: Compilar la app con MSBuild
         working-directory: Systm_Web
         run: msbuild Systm_Web.sln /p:Configuration=${{ env.BUILD_CONFIGURATION }}
 
+      # Paso 5: Verificar la carpeta de salida
+      - name: Verificar carpeta de salida
+        working-directory: Systm_Web
+        run: |
+          # Listar el contenido de la carpeta bin/Release
+          Get-ChildItem -Path "./bin/Release" -Recurse
+
+          # Verificar si la carpeta net48 existe
+          if (Test-Path -Path "./bin/Release/net48") {
+              Write-Output "La carpeta net48 existe."
+          } else {
+              Write-Error "La carpeta net48 no existe."
+              exit 1
+          }
+
       # Paso 6: Crear el paquete de despliegue
       - name: Crear el paquete de despliegue
         working-directory: Systm_Web
-        run: Compress-Archive -Path "./bin/${{ env.BUILD_CONFIGURATION }}/net48/*" -DestinationPath "../Systm_Web-package.zip"
+        run: |
+          # Comprimir los archivos en la carpeta Release
+          Compress-Archive -Path "./bin/Release/*" -DestinationPath "../Systm_Web-package.zip"
 
       # Paso 7: Subir el paquete como artefacto
       - name: Subir el paquete como artefacto
