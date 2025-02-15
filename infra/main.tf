@@ -35,7 +35,7 @@ resource "azurerm_service_plan" "appserviceplan" {
 
 # Crear la Aplicación Web en Azure para .NET Framework
 resource "azurerm_windows_web_app" "webapp" {
-  name                = "upt-aspnet-app"
+  name                = "upt-aspnet-proyecto"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.appserviceplan.id
