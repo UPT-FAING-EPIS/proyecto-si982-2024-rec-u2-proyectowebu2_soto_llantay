@@ -4,3 +4,9 @@ C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Syst
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.dll
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\bin\Debug\Entidades.dll
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\obj\Debug\Entidades.dll
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\Entidades\obj\Debug\Entidades.pdb

@@ -35,3 +35,12 @@ C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Syst
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\AccesoDato\obj\Debug\AccesoDato.csproj.CopyComplete
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\AccesoDato\obj\Debug\AccesoDato.dll
 C:\U_II_proyecto_LLANTAY_SOTO\Bolsa de Trabajo\Bolsa Trabajo Asp.Net\System\Systm_Web\AccesoDato\obj\Debug\AccesoDato.pdb
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\bin\Debug\AccesoDato.dll
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\bin\Debug\AccesoDato.pdb
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\bin\Debug\Entidades.dll
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\bin\Debug\Entidades.pdb
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\obj\Debug\AccesoDato.csproj.AssemblyReference.cache
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\obj\Debug\AccesoDato.csproj.CoreCompileInputs.cache
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\obj\Debug\AccesoDato.csproj.Up2Date
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\obj\Debug\AccesoDato.dll
+C:\Users\Edward\Desktop\marjito\proyecto-si982-2024-rec-u2-proyectowebu2_soto_llantay\Systm_Web\AccesoDato\obj\Debug\AccesoDato.pdb
