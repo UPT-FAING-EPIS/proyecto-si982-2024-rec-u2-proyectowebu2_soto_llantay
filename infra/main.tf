@@ -46,7 +46,7 @@ resource "azurerm_windows_web_app" "webapp" {
     always_on           = false
     application_stack {
       current_stack = "dotnet"
-      dotnet_version = "v4.8"  # Especifica la versión de .NET Framework
+      net_framework_version = "v4.8"  # Especifica la versión de .NET Framework
     }
   }
 }
