@@ -35,18 +35,19 @@ resource "azurerm_service_plan" "appserviceplan" {
 
 # Crear la Aplicación Web en Azure para .NET Framework
 resource "azurerm_windows_web_app" "webapp" {
-  name                = "upt-awa-bolsatrabajo"
+  name                = "upt-aspnet-app"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   service_plan_id     = azurerm_service_plan.appserviceplan.id
 
   site_config {
-    minimum_tls_version = "1.2"
-    always_on           = false
-    use_32_bit_worker   = true  # ✔️
+    always_on             = false
+    ftps_state            = "Disabled"
+    managed_pipeline_mode = "Integrated"  # Modo de ejecución para ASP.NET
+    windows_fx_version    = "DOTNETFRAMEWORK|v4.8"  # ✅ Especifica .NET Framework v4.8
+  }
 
-    application_stack {
-      net_framework_version = "v4.8"  # ✔️ .NET Framework 4.8
-    }
+  app_settings = {
+    "WEBSITE_NODE_DEFAULT_VERSION" = "~14"  # Valor por defecto requerido por Azure
   }
 }
