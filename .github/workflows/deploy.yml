@@ -1,54 +1,56 @@
 name: Construcción y despliegue de Systm_Web en Azure App Service
 
 env:
-  AZURE_WEBAPP_NAME: upt-aspnet-app   # Nombre de la aplicación en Azure
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # Ruta al paquete compilado
-  BUILD_CONFIGURATION: 'Release'      # Configuración de compilación
+  AZURE_WEBAPP_NAME: upt-aspnet-app  # Nombre de la aplicación en Azure
+  BUILD_CONFIGURATION: 'Release'     # Configuración de compilación
 
 on:
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
+    branches: [ "main" ]  # Se activa al hacer push a la rama main
+  workflow_dispatch:      # Permite ejecución manual
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-latest  # Usa un entorno Windows para .NET Framework
     steps:
-      # 1. Checkout del repositorio
+      # Paso 1: Checkout del repositorio
       - uses: actions/checkout@v4
 
-      # 2. Configurar MSBuild
+      # Paso 2: Configurar MSBuild
       - name: Configurar MSBuild
         uses: microsoft/setup-msbuild@v1
 
-      # 3. Restaurar paquetes NuGet
+      # Paso 3: Restaurar paquetes NuGet
       - name: Restaurar paquetes NuGet
         working-directory: Systm_Web
         run: nuget restore Systm_Web.sln
 
-      # 4. Compilar la aplicación con MSBuild (.NET Framework)
+      # Paso 4: Compilar la aplicación con MSBuild
       - name: Compilar la app con MSBuild
         working-directory: Systm_Web
         run: msbuild Systm_Web.sln /p:Configuration=${{ env.BUILD_CONFIGURATION }}
 
-      # 5. Verificar la carpeta de salida (bin/Release)
+      # Paso 5: Verificar la carpeta de salida y su contenido
       - name: Verificar carpeta de salida
         working-directory: Systm_Web
         run: |
+          # Verificar si la carpeta bin/Release existe
           if (Test-Path -Path "./bin/Release") {
-            Write-Output "La carpeta bin/Release existe."
-            Get-ChildItem -Path "./bin/Release" -Recurse
+              Write-Output "La carpeta bin/Release existe."
+              Get-ChildItem -Path "./bin/Release" -Recurse
           } else {
-            Write-Error "La carpeta bin/Release no existe."
-            exit 1
+              Write-Error "La carpeta bin/Release no existe."
+              exit 1
           }
 
-      # 6. Crear el paquete de despliegue (ZIP)
+      # Paso 6: Crear el paquete de despliegue
       - name: Crear el paquete de despliegue
         working-directory: Systm_Web
-        run: Compress-Archive -Path "./bin/Release/*" -DestinationPath "../Systm_Web-package.zip"
+        run: |
+          # Comprimir los archivos de la carpeta bin/Release/
+          Compress-Archive -Path "./bin/Release/*" -DestinationPath "../Systm_Web-package.zip"
 
-      # 7. Subir el paquete como artefacto
+      # Paso 7: Subir el paquete como artefacto
       - name: Subir el paquete como artefacto
         uses: actions/upload-artifact@v4
         with:
@@ -56,7 +58,7 @@ jobs:
           path: Systm_Web-package.zip
 
   deploy:
-    needs: build
+    needs: build  # Depende del job "build"
     runs-on: windows-latest
     permissions:
       contents: none
@@ -64,13 +66,13 @@ jobs:
       name: Production
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     steps:
-      # 1. Descargar el paquete de la app
+      # Paso 1: Descargar el paquete de la app
       - name: Descargar el paquete de la app
         uses: actions/download-artifact@v4
         with:
           name: Systm_Web-package
 
-      # 2. Desplegar a Azure App Service
+      # Paso 2: Desplegar a Azure App Service
       - name: Desplegar a Azure App Service
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
