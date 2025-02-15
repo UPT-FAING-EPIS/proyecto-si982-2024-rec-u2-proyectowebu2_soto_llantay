@@ -46,8 +46,7 @@ resource "azurerm_windows_web_app" "webapp" {
     use_32_bit_worker   = true  # ✔️
 
     application_stack {
-      current_stack  = "dotnet"    # Obligatorio: Define el stack como .NET
-      dotnet_version = "v4.8"      # ✔️ Argumento CORRECTO para .NET Framework
+      net_framework_version = "v4.8"  # ✔️ .NET Framework 4.8
     }
   }
 }
