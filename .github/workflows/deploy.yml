@@ -17,16 +17,6 @@ jobs:
       # Paso 1: Checkout del repositorio
       - uses: actions/checkout@v4
 
-      # Paso 2: Instalar .NET Framework 4.5 Developer Pack
-      - name: Instalar .NET Framework 4.5
-        shell: powershell
-        run: |
-          # Descargar el instalador del .NET Framework 4.5 Developer Pack
-          Invoke-WebRequest -Uri "https://download.visualstudio.microsoft.com/download/pr/8e396c75-4d0d-41d3-aea8-848babc2736a/80b431456d8866ebe053eb8b81a168b3/ndp45-devpack-kb2882822.exe" -OutFile "$env:RUNNER_TEMP\ndp45-devpack.exe"
-          
-          # Ejecutar el instalador en modo silencioso
-          Start-Process -Wait -FilePath "$env:RUNNER_TEMP\ndp45-devpack.exe" -ArgumentList "/quiet /norestart"
-
       # Paso 3: Configurar MSBuild
       - name: Configurar MSBuild
         uses: microsoft/setup-msbuild@v1
