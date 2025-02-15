@@ -21,8 +21,8 @@ jobs:
             /*
             !**/aspnet_client  # Excluye la carpeta aspnet_client
             !**/packages       # Excluye la carpeta packages
-          cone: false          # Desactiva el modo "cone" para permitir exclusiones
-      
+          sparse-checkout-cone-mode: false  # Desactiva el modo "cone"
+
       # Paso 2: Configurar Git para rutas largas
       - name: Configurar Git para rutas largas
         run: git config --global core.longpaths true
