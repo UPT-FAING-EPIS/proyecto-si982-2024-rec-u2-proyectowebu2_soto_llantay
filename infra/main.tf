@@ -42,8 +42,9 @@ resource "azurerm_windows_web_app" "webapp" {
   depends_on          = [azurerm_service_plan.appserviceplan]
 
   site_config {
-    minimum_tls_version        = "1.2"
-    always_on                  = false
-    use_32_bit_worker_process  = true  # Colocación corregida
+    minimum_tls_version         = "1.2"
+    always_on                   = false
+    use_32_bit_worker           = true  # Nombre CORRECTO del argumento
+    net_framework_version       = "v4.8"  # Especifica .NET Framework 4.8
   }
 }
