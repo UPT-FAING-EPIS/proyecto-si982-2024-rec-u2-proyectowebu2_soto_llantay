@@ -1,0 +1,60 @@
+name: Construcción y despliegue de Systm_Web en Azure App Service
+
+env:
+  AZURE_WEBAPP_NAME: upt-aspnet-app  # Nombre en Azure
+  AZURE_WEBAPP_PACKAGE_PATH: './Systm_Web/bin/Release/net48/'  # Ruta al paquete compilado
+  BUILD_CONFIGURATION: 'Release'
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest  # 🔹 Se necesita Windows para compilar .NET Framework
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar MSBuild
+        uses: microsoft/setup-msbuild@v1
+
+      - name: Restaurar paquetes NuGet
+        working-directory: Systm_Web
+        run: nuget restore Systm_Web.sln
+
+      - name: Compilar la app con MSBuild
+        working-directory: Systm_Web
+        run: msbuild Systm_Web.sln /p:Configuration=${{ env.BUILD_CONFIGURATION }}
+
+      - name: Crear el paquete de despliegue
+        working-directory: Systm_Web
+        run: Compress-Archive -Path "./bin/${{ env.BUILD_CONFIGURATION }}/net48/*" -DestinationPath "../Systm_Web-package.zip"
+
+      - name: Subir el paquete como artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: Systm_Web-package
+          path: Systm_Web-package.zip
+
+  deploy:
+    needs: build
+    runs-on: windows-latest
+    permissions:
+      contents: none
+    environment:
+      name: Production
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    steps:
+      - name: Descargar el paquete de la app
+        uses: actions/download-artifact@v4
+        with:
+          name: Systm_Web-package
+
+      - name: Desplegar a Azure App Service
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: Systm_Web-package.zip
