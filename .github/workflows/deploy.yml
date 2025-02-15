@@ -15,6 +15,12 @@ jobs:
     runs-on: windows-latest  # 🔹 Se necesita Windows para compilar .NET Framework
     steps:
       - uses: actions/checkout@v4
+        with:
+            git-config: "core.longpaths=true"  # ✅ Habilita rutas largas
+            sparse-checkout: |  # ✅ Solo clona lo necesario
+                /*
+                !**/aspnet_client/
+                !**/packages/
 
       - name: Configurar MSBuild
         uses: microsoft/setup-msbuild@v1
