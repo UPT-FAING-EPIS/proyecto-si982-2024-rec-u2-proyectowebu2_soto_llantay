@@ -3,10 +3,14 @@
 
 # PROYECTO BOLSA DE TRABAJO
 
-## INTEGRANTES 
-:
+## INTEGRANTES :
 
 | Nombre | Código |
 |--------|--------|
 | SOTO RODRIGUES Duanet | 2015051384 |
 | LLLANTAY MACHACA Marjiory Grace   | 2020068951 |
+
+## DIAGRAMA BASE DE DATOS 
+
+![WhatsApp Image 2025-02-11 at 11 46 12 PM (1)](https://github.com/user-attachments/assets/0df1217a-30b9-4802-919c-a069a42511e5)
+
