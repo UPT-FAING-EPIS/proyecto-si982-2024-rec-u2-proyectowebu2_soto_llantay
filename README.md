@@ -21,7 +21,11 @@
 ## DIAGRAMA DE CLASES
 
 ![image](https://github.com/user-attachments/assets/fc4f5900-b2f5-496c-a6eb-dee6998e909d)
+
 ## DIAGRAMA DE ARQUITECTURA 
 ![image](https://github.com/user-attachments/assets/e9a10a52-3397-4a99-bddc-c399717e7e90)
 
+## DIAGRAMA DE INFRAESTRUCTURA
+
+![image](https://github.com/user-attachments/assets/cdac48ff-0daa-486b-ae55-94312f0dd097)
 
